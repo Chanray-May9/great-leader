@@ -26,6 +26,24 @@ python -m http.server 8080     # 然后访问 http://localhost:8080
 node build-lists.js && node build-search.js
 ```
 
+## 部署
+
+站点同时部署在两处，内容完全相同：
+
+| 地址 | 平台 |
+|---|---|
+| https://chanray-may9.github.io/great-leader/ | GitHub Pages |
+| https://great-leader.pages.dev/ | Cloudflare Pages |
+
+访问量接口：`https://gqr-api.gqr20080509.workers.dev`（Cloudflare Worker + KV）。
+Worker 的 CORS 白名单必须同时包含以上两个域名，新增域名时记得同步 `api/worker.js` 并重新部署。
+
+一键部署两处：
+
+```bash
+./deploy.sh "提交说明"
+```
+
 ## 声明
 
 本站为个人主页，与任何机构、组织、政党均无关联。

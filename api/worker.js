@@ -4,10 +4,12 @@
  * 存储：KV namespace 绑定名 SITE
  */
 
-// 只允许你自己的前端域名调用（部署后改成你的 GitHub Pages 地址）
+// 允许调用本接口的前端域名。
+// 站点同时部署在 GitHub Pages 与 Cloudflare Pages，两个域名都要放行。
 const ALLOW = [
-  'https://chanray-may9.github.io',
-  'http://localhost:8080',
+  'https://chanray-may9.github.io',   // GitHub Pages
+  'https://great-leader.pages.dev',   // Cloudflare Pages
+  'http://localhost:8080',            // 本地开发
 ];
 
 const cors = (origin) => ({
