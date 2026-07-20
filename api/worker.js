@@ -6,7 +6,7 @@
 
 // 只允许你自己的前端域名调用（部署后改成你的 GitHub Pages 地址）
 const ALLOW = [
-  'https://YOUR-USERNAME.github.io',
+  'https://chanray-may9.github.io',
   'http://localhost:8080',
 ];
 

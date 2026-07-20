@@ -1,7 +1,7 @@
 /* 郭权锐同志个人网站 — 前端脚本 */
 
 // ⬇⬇ 部署后把这里改成你的 Worker 地址
-const API = 'https://gqr-api.YOUR-SUBDOMAIN.workers.dev';
+const API = 'https://gqr-api.gqr20080509.workers.dev';
 
 const N = '<span class="name">郭权锐</span>'; // 名字统一加粗
 
