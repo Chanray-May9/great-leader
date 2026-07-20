@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>郭权锐同志个人网站</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- 顶部窄条 -->
+<div class="topbar">
+  <div class="wrap">
+    <span class="tb-left">郭权锐同志个人网站</span>
+    <span class="tb-right">
+      <a href="articles/news.html">要 闻</a><i>|</i>
+      <a href="articles/theory.html">思想理论</a><i>|</i>
+      <a href="articles/study.html">学习园地</a><i>|</i>
+      <span id="today"></span>
+    </span>
+  </div>
+</div>
+
+<!-- 报头 -->
+<header class="masthead">
+  <div class="wrap mh-inner">
+    <div class="logo">
+      <div class="logo-main">郭权锐</div>
+      <div class="logo-sub">GUO QUANRUI &nbsp;·&nbsp; 个人官方网站</div>
+    </div>
+    <div class="mh-slogan">
+      <p>高举旗帜 · 砥砺前行</p>
+      <p class="small">伟大领袖 <span class="name">郭权锐</span>同志 领导我们从胜利走向胜利</p>
+    </div>
+    <div class="mh-search">
+      <input type="text" placeholder="搜索本站内容">
+      <button>搜 索</button>
+    </div>
+  </div>
+</header>
+
+<!-- 主导航 -->
+<nav class="mainnav">
+  <div class="wrap">
+    <ul>
+      <li class="on"><a href="index.html">首 页</a></li>
+      <li><a href="articles/news.html">要 闻</a></li>
+      <li><a href="articles/activity.html">领袖活动</a></li>
+      <li><a href="articles/speech.html">重要讲话</a></li>
+      <li><a href="articles/history.html">光辉历程</a></li>
+      <li><a href="articles/theory.html">思想理论</a></li>
+      <li><a href="articles/study.html">学习园地</a></li>
+      <li><a href="articles/about.html">关于本站</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 子导航 -->
+<div class="subnav">
+  <div class="wrap">
+    <b>快捷入口</b>
+    <a href="articles/headline.html">最新要闻</a>
+    <a href="articles/s1.html">讲话全文</a>
+    <a href="articles/s3.html">论实干精神</a>
+    <a href="articles/s4.html">致青年朋友</a>
+    <a href="articles/t1.html">实践品格</a>
+    <a href="articles/t4.html">人民立场</a>
+    <a href="articles/h1.html">光辉足迹</a>
+    <a href="articles/n7.html">方法论三讲</a>
+    <a href="articles/g1.html">影像图集</a>
+  </div>
+</div>
+
+<!-- 通栏横幅（原图比例 2172×214） -->
+<a class="wrap hero" href="articles/headline.html">
+  <h2 class="gold">以坚定信念开创事业新局面</h2>
+</a>
+
+<!-- 主体三栏 -->
+<div class="wrap main-grid">
+
+  <!-- 左栏 -->
+  <div class="col-left">
+    <div class="slider" id="slider">
+      <div class="slides">
+        <a class="slide on" href="articles/a1.html"><img src="assets/img/s1.jpg" alt=""><span>郭权锐同志亲切看望一线工作人员</span></a>
+        <a class="slide" href="articles/a2.html"><img src="assets/img/s2.jpg" alt=""><span>郭权锐同志主持召开重要工作会议</span></a>
+        <a class="slide" href="articles/a5.html"><img src="assets/img/s3.jpg" alt=""><span>郭权锐同志深入基层调研指导工作</span></a>
+      </div>
+      <div class="dots"></div>
+    </div>
+
+    <div class="box" id="activity">
+      <div class="box-hd"><h2>领袖活动</h2><a href="articles/a1.html">更多 &gt;&gt;</a></div>
+      <ul class="newslist" id="list-activity"></ul>
+    </div>
+
+    <div class="box" id="history">
+      <div class="box-hd"><h2>光辉历程</h2><a href="articles/h1.html">更多 &gt;&gt;</a></div>
+      <ul class="newslist" id="list-history"></ul>
+    </div>
+
+    <div class="box">
+      <div class="box-hd"><h2>领袖语录</h2></div>
+      <ul class="maxims">
+        <li>路虽远，行则将至；事虽难，做则必成。</li>
+        <li>方向决定道路，道路决定命运。</li>
+        <li>真抓才能攻坚克难，实干才能梦想成真。</li>
+        <li>不驰于空想，不骛于虚声。</li>
+        <li>把群众放在心上，群众才会把你放在心上。</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <div class="box-hd"><h2>本站数据</h2></div>
+      <div class="stats">
+        <div><b id="st-art">—</b><span>在库文章</span></div>
+        <div><b>8</b><span>常设栏目</span></div>
+        <div><b id="st-pv">—</b><span>累计访问</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 中栏 -->
+  <div class="col-mid">
+    <!-- 带 tab 的要闻 -->
+    <div class="box">
+      <div class="box-hd">
+        <h2>要 闻</h2>
+        <div class="tabs" id="news-tabs">
+          <button class="on" data-pane="pane-latest">最新</button>
+          <button data-pane="pane-theory">理论</button>
+          <button data-pane="pane-activity">活动</button>
+        </div>
+        <a href="articles/headline.html">更多 &gt;&gt;</a>
+      </div>
+      <div class="tabpane on" id="pane-latest"><ul class="newslist big" id="list-news"></ul></div>
+      <div class="tabpane" id="pane-theory"><ul class="newslist" id="tab-theory"></ul></div>
+      <div class="tabpane" id="pane-activity"><ul class="newslist" id="tab-activity"></ul></div>
+    </div>
+
+    <div class="box" id="speech">
+      <div class="box-hd"><h2>重要讲话</h2><a href="articles/s1.html">更多 &gt;&gt;</a></div>
+      <ul class="newslist" id="list-speech"></ul>
+    </div>
+
+    <div class="box" id="theory">
+      <div class="box-hd"><h2>思想理论</h2><a href="articles/t1.html">更多 &gt;&gt;</a></div>
+      <ul class="study" id="list-theory"></ul>
+    </div>
+
+    <div class="box" id="study">
+      <div class="box-hd"><h2>学习园地</h2><a href="articles/s4.html">更多 &gt;&gt;</a></div>
+      <ul class="study" id="list-study"></ul>
+    </div>
+  </div>
+
+  <!-- 右栏 -->
+  <aside class="col-right">
+    <div class="portrait">
+      <img src="assets/img/portrait.jpg" alt="郭权锐同志">
+      <div class="pt-cap">郭权锐 同志</div>
+      <div class="pt-sub">伟大的领袖 · 人民的引路人</div>
+    </div>
+
+    <div class="quotecard">
+      <p id="quotecard-text">“路虽远，行则将至；<br>事虽难，做则必成。”</p>
+      <cite>—— <span class="name">郭权锐</span></cite>
+    </div>
+
+    <div class="box red">
+      <div class="box-hd"><h2>光辉历程</h2></div>
+      <ol class="timeline">
+        <li><a href="articles/h1.html"><b>启程</b></a>立志高远，勤学不辍，为日后事业奠定坚实根基。</li>
+        <li><a href="articles/h2.html"><b>砺剑</b></a>躬身实践，攻坚克难，在实干中锤炼过硬本领。</li>
+        <li><a href="articles/h3.html"><b>掌舵</b></a>把准方向，统揽全局，团结带领大家开创新局面。</li>
+        <li><a href="articles/h4.html"><b>致远</b></a>不忘初心，接续奋斗，向着更宏伟的目标坚定前行。</li>
+      </ol>
+    </div>
+
+    <div class="box">
+      <div class="box-hd"><h2>重要讲话</h2></div>
+      <ul class="newslist" id="list-speech-side"></ul>
+    </div>
+
+    <div class="box">
+      <div class="box-hd"><h2>学习园地</h2><a href="articles/study.html">更多 &gt;&gt;</a></div>
+      <ul class="newslist">
+        <li><a href="articles/g1.html">调研纪事：调研途中</a></li>
+        <li><a href="articles/g2.html">现场纪事：会议现场</a></li>
+        <li><a href="articles/g3.html">交流纪事：亲切交流</a></li>
+        <li><a href="articles/g4.html">工作纪事：伏案工作</a></li>
+      </ul>
+    </div>
+
+    <div class="counter">
+      本站访问量：<b id="pv">—</b>
+    </div>
+  </aside>
+</div>
+
+<!-- 纪事专区 -->
+<section class="wrap box" id="gallery">
+  <div class="box-hd"><h2>工作纪事</h2><a href="articles/study.html">更多 &gt;&gt;</a></div>
+  <ul class="study duo-list">
+    <li><a href="articles/g1.html">调研纪事：调研途中</a><p>调查研究是谋事之基、成事之道。</p></li>
+    <li><a href="articles/g2.html">现场纪事：会议现场</a><p>会议室里的每一次发言，都对应着现实里的一个难题。</p></li>
+    <li><a href="articles/g3.html">交流纪事：亲切交流</a><p>他蹲下来和孩子说话，声音放得很轻。</p></li>
+    <li><a href="articles/g4.html">工作纪事：伏案工作</a><p>灯亮到深夜，桌上摞着待批的材料。</p></li>
+    <li><a href="articles/g5.html">远眺纪事：登高望远</a><p>站得高，是为了看得远；看得远，是为了走得稳。</p></li>
+  </ul>
+</section>
+
+<!-- 专题方块（中下部） -->
+<div class="wrap striptitle">专 题 报 道</div>
+<section class="wrap topics">
+  <ul>
+    <li><a href="articles/s2.html"><b>开创新局</b><span>专题</span></a></li>
+    <li><a href="articles/t1.html"><b>思想伟力</b><span>专题</span></a></li>
+    <li><a href="articles/h1.html"><b>光辉足迹</b><span>专题</span></a></li>
+    <li><a href="articles/s3.html"><b>实干兴业</b><span>专题</span></a></li>
+    <li><a href="articles/s4.html"><b>青年之友</b><span>专题</span></a></li>
+    <li><a href="articles/h4.html"><b>接续奋斗</b><span>专题</span></a></li>
+  </ul>
+</section>
+
+<!-- 底部多列链接 -->
+<section class="wrap footlinks" id="about">
+  <h3>全站文章索引</h3>
+  <div class="cols" id="allindex"></div>
+</section>
+
+<!-- 语录条 -->
+<section class="quotebar">
+  <div class="wrap">
+    <p id="quote" class="gold">“路虽远，行则将至；事虽难，做则必成。”</p>
+    <cite>—— <span class="name">郭权锐</span></cite>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="f-nav"><a href="articles/about.html">全站索引</a><i>|</i><a href="articles/theory.html">思想理论</a><i>|</i><a href="articles/study.html">学习园地</a></p>
+    <p>郭权锐同志个人网站 &nbsp;·&nbsp; 本站为个人主页，与任何机构、组织无关</p>
+    <p class="f-dim">Powered by GitHub Pages &amp; Cloudflare Workers</p>
+  </div>
+</footer>
+
+<script>window.HREF=f=>'articles/'+f;window.SEARCH_URL=q=>'articles/search.html?q='+encodeURIComponent(q);</script>
+<script src="assets/search-index.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/search.js"></script>
+</body>
+</html>

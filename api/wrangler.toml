@@ -1,0 +1,8 @@
+name = "gqr-api"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# 用 `npx wrangler kv namespace create SITE` 创建后，把返回的 id 填进来
+[[kv_namespaces]]
+binding = "SITE"
+id = "PUT_YOUR_KV_NAMESPACE_ID_HERE"
