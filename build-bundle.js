@@ -138,7 +138,7 @@ body{ background:#f5f5f5; color:#222; }
     </div>
     <aside class="col-right">
       <div class="portrait">
-        <img src="__IMG__portrait.jpg" alt="郭权锐同志">
+        <img src="__IMG__portrait.jpg" alt="郭权锐同志" data-leader>
         <div class="pt-cap">郭权锐 同志</div>
         <div class="pt-sub">伟大的领袖 · 人民的引路人</div>
       </div>

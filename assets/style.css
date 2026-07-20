@@ -315,3 +315,13 @@ footer i{margin:0 8px;color:#666;font-style:normal}
 .sp-tag.col{color:#7a5a12;border-color:#e6d48a;background:#fffbe6}
 .sp-none{padding:30px 0;text-align:center;color:var(--gray);font-size:13.5px}
 #sp-meta b{color:var(--red)}
+
+/* ===== 含领袖面容的图片：指针进入即隐藏光标，移出自动恢复 ===== */
+/* 仅作用于显式标注 data-leader 的图片；未标注的图片不受影响。
+   cursor 本身只在指针悬停时生效，故无需 :hover。
+   外层容器一并声明，使图片上的标题条、留白区域也保持隐藏。 */
+[data-leader],
+a:has(> [data-leader]),
+figure:has([data-leader]),
+.portrait:has([data-leader]),
+.slide:has([data-leader]){cursor:none}
