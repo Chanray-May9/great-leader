@@ -38,6 +38,7 @@ const artCss = read('assets/article.css');
 let js = read('assets/app.js');
 const searchIdx = read('assets/search-index.js');
 const siteData = read('assets/site-data.js');
+const noticeJs = read('assets/notice.js');
 const searchJs = read('assets/search.js');
 
 let home = swapImgs(html.slice(html.indexOf('<body>') + 6, html.indexOf('</body>')))
@@ -165,6 +166,9 @@ ${js}
 </script>
 <script>
 ${searchJs}
+</script>
+<script>
+${noticeJs}
 </script>
 <script>
 /* ---------- hash 路由 ---------- */

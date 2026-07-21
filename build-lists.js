@@ -152,6 +152,7 @@ ${SIDEBAR}
 <script>window.HREF=f=>f;</script>
 <script src="../assets/search-index.js"></script>
 <script src="../assets/search.js"></script>
+<script src="../assets/notice.js"></script>
 <script>
 (function(){var d=new Date(),w='日一二三四五六'[d.getDay()];
 document.getElementById('today').textContent=d.getFullYear()+'年'+(d.getMonth()+1)+'月'+d.getDate()+'日 星期'+w;})();
