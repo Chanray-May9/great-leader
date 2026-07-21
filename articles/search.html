@@ -48,9 +48,7 @@
   </div>
 </nav>
 
-<div class="wrap crumb">
-  您的位置：<a href="../index.html">首页</a> &gt; <b>搜索结果</b>
-</div>
+<div class="wrap crumb">您的位置：<a href="../index.html">首页</a> &gt; <b>搜索结果</b></div>
 
 <div class="wrap art-grid">
   <div class="listmain">
@@ -60,6 +58,7 @@
     </div>
     <ul class="listpage" id="sp-list"></ul>
   </div>
+
   <aside class="col-right">
     <div class="portrait">
       <img src="../assets/img/portrait.jpg" alt="郭权锐同志" data-leader>
@@ -73,12 +72,12 @@
     <div class="box">
       <div class="box-hd"><h2>其他栏目</h2></div>
       <ul class="newslist">
-        <li><a href="news.html">要 闻</a></li>
-        <li><a href="activity.html">领袖活动</a></li>
-        <li><a href="speech.html">重要讲话</a></li>
-        <li><a href="history.html">光辉历程</a></li>
-        <li><a href="theory.html">思想理论</a></li>
-        <li><a href="study.html">学习园地</a></li>
+        <li><a href="news.html">要闻</a><time>32 篇</time></li>
+        <li><a href="activity.html">领袖活动</a><time>31 篇</time></li>
+        <li><a href="speech.html">重要讲话</a><time>20 篇</time></li>
+        <li><a href="history.html">光辉历程</a><time>16 篇</time></li>
+        <li><a href="theory.html">思想理论</a><time>24 篇</time></li>
+        <li><a href="study.html">学习园地</a><time>17 篇</time></li>
       </ul>
     </div>
   </aside>
@@ -97,6 +96,8 @@
 <script>
 (function(){var d=new Date(),w='日一二三四五六'[d.getDay()];
 document.getElementById('today').textContent=d.getFullYear()+'年'+(d.getMonth()+1)+'月'+d.getDate()+'日 星期'+w;})();
+</script>
+<script>
 window.renderSearchPage(new URLSearchParams(location.search).get('q') || '');
 </script>
 </body>

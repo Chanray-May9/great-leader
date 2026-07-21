@@ -115,7 +115,7 @@
       <div class="box-hd"><h2>本站数据</h2></div>
       <div class="stats">
         <div><b id="st-art">—</b><span>在库文章</span></div>
-        <div><b>8</b><span>常设栏目</span></div>
+        <div><b>6</b><span>内容栏目</span></div>
         <div><b id="st-pv">—</b><span>累计访问</span></div>
       </div>
     </div>
@@ -185,12 +185,7 @@
 
     <div class="box">
       <div class="box-hd"><h2>学习园地</h2><a href="articles/study.html">更多 &gt;&gt;</a></div>
-      <ul class="newslist">
-        <li><a href="articles/g1.html">调研纪事：调研途中</a></li>
-        <li><a href="articles/g2.html">现场纪事：会议现场</a></li>
-        <li><a href="articles/g3.html">交流纪事：亲切交流</a></li>
-        <li><a href="articles/g4.html">工作纪事：伏案工作</a></li>
-      </ul>
+      <ul class="newslist" id="list-study-side"></ul>
     </div>
 
     <div class="counter">
@@ -199,16 +194,10 @@
   </aside>
 </div>
 
-<!-- 纪事专区 -->
+<!-- 光辉历程专区 -->
 <section class="wrap box" id="gallery">
-  <div class="box-hd"><h2>工作纪事</h2><a href="articles/study.html">更多 &gt;&gt;</a></div>
-  <ul class="study duo-list">
-    <li><a href="articles/g1.html">调研纪事：调研途中</a><p>调查研究是谋事之基、成事之道。</p></li>
-    <li><a href="articles/g2.html">现场纪事：会议现场</a><p>会议室里的每一次发言，都对应着现实里的一个难题。</p></li>
-    <li><a href="articles/g3.html">交流纪事：亲切交流</a><p>他蹲下来和孩子说话，声音放得很轻。</p></li>
-    <li><a href="articles/g4.html">工作纪事：伏案工作</a><p>灯亮到深夜，桌上摞着待批的材料。</p></li>
-    <li><a href="articles/g5.html">远眺纪事：登高望远</a><p>站得高，是为了看得远；看得远，是为了走得稳。</p></li>
-  </ul>
+  <div class="box-hd"><h2>光辉历程</h2><a href="articles/history.html">更多 &gt;&gt;</a></div>
+  <ul class="study duo-list" id="list-history-wide"></ul>
 </section>
 
 <!-- 专题方块（中下部） -->
@@ -247,6 +236,7 @@
 </footer>
 
 <script>window.HREF=f=>'articles/'+f;window.SEARCH_URL=q=>'articles/search.html?q='+encodeURIComponent(q);</script>
+<script src="assets/site-data.js"></script>
 <script src="assets/search-index.js"></script>
 <script src="assets/app.js"></script>
 <script src="assets/search.js"></script>

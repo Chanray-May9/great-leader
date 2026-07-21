@@ -37,6 +37,7 @@ const css = read('assets/style.css').replace(/url\(["']?img\/([\w.-]+)["']?\)/g,
 const artCss = read('assets/article.css');
 let js = read('assets/app.js');
 const searchIdx = read('assets/search-index.js');
+const siteData = read('assets/site-data.js');
 const searchJs = read('assets/search.js');
 
 let home = swapImgs(html.slice(html.indexOf('<body>') + 6, html.indexOf('</body>')))
@@ -44,7 +45,6 @@ let home = swapImgs(html.slice(html.indexOf('<body>') + 6, html.indexOf('</body>
 
 // 首页里的文章链接 → hash 路由
 home = home.replace(/href="articles\/([\w-]+)\.html"/g, 'href="#/$1"');
-js = js.replace(/articles\/\$\{href\}/g, '#/${href.replace(".html","")}');
 
 /* ---------- 文章 ---------- */
 const artDir = path.join(root, 'articles');
@@ -155,6 +155,7 @@ const IMG = ${JSON.stringify(imgs)};
 const ARTICLES = ${JSON.stringify(articles)};
 </script>
 <script>
+${siteData}
 ${searchIdx}
 window.HREF = f => '#/' + f.replace('.html','');
 window.SEARCH_URL = q => '#/search/' + encodeURIComponent(q);
